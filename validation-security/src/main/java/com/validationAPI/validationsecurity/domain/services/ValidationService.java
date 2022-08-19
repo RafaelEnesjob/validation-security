@@ -1,10 +1,7 @@
-package com.validationAPI.validationsecurity.services;
+package com.validationAPI.validationsecurity.domain.services;
 
-import com.validationAPI.validationsecurity.mapper.ValidationConverter;
-import com.validationAPI.validationsecurity.models.entitys.Validation;
-import com.validationAPI.validationsecurity.models.request.ValidationRequestDTO;
-import com.validationAPI.validationsecurity.repositorys.ValidationRepository;
-import net.bytebuddy.implementation.bytecode.Throw;
+import com.validationAPI.validationsecurity.domain.entities.Validation;
+import com.validationAPI.validationsecurity.domain.repositories.ValidationRepository;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 import org.springframework.web.server.ResponseStatusException;
@@ -30,7 +27,7 @@ public class ValidationService {
         this.repository = repository;
     }
 
-    public static boolean hasDuplicatedChar(String password) {
+    private static boolean hasDuplicatedChar(String password) {
 
         char[] inp = password.toCharArray();
         for (int i = 0; i < password.length(); i++) {
@@ -41,9 +38,9 @@ public class ValidationService {
         return false;
     }
 
-    public static boolean isValid(String password) {
+    private static boolean isValid(String password) {
         message = "true";
-        if (!DIGIT.matcher(password).find()) message ="A senha deve conter ao menos um dígito.";
+        if (!DIGIT.matcher(password).find()) message = "A senha deve conter ao menos um dígito.";
         if (!LOWER.matcher(password).find()) message = "A senha deve conter ao menos uma letra minúscula.";
         if (!UPPER.matcher(password).find()) message = "A senha deve conter ao menos uma letra maiúscula.";
         if (!PUNCT.matcher(password).find()) message = "A senha deve conter ao menos um caracter especial.";
@@ -55,17 +52,16 @@ public class ValidationService {
 
 
     @Transactional
-    public Validation enterThePassword(ValidationRequestDTO validationRequest) {
-        Validation validation = ValidationConverter.INSTANCE.toValidation(validationRequest);
-        if (!isValid(validationRequest.getPassword())) {
+    public Validation enterThePassword(Validation validation) {
+        if (!isValid(validation.getPassword())) {
             throw new ResponseStatusException(HttpStatus.BAD_REQUEST, message);
         }
-        validation.setValid(isValid(validationRequest.getPassword()));
-        validation.setPassword(encryption(validationRequest.getPassword()));
+        validation.setValid(isValid(validation.getPassword()));
+        validation.setPassword(encryption(validation.getPassword()));
         return repository.save(validation);
     }
 
-    public static String encryption(String password) {
+    private static String encryption(String password) {
         StringBuilder stringBuilder = new StringBuilder();
         try {
             MessageDigest messageDigest = MessageDigest.getInstance("SHA-256");

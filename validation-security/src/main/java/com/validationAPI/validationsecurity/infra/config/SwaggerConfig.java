@@ -1,4 +1,4 @@
-package com.validationAPI.validationsecurity.config;
+package com.validationAPI.validationsecurity.infra.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

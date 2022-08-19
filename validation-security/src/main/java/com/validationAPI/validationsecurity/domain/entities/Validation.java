@@ -1,4 +1,4 @@
-package com.validationAPI.validationsecurity.models.entitys;
+package com.validationAPI.validationsecurity.domain.entities;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.*;
