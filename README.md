@@ -18,5 +18,7 @@ IsValid("ab") // false
 IsValid("AAAbbbCc") // false  
 IsValid("AbTp9!foo") // false  
 IsValid("AbTp9!foA") // false
+
 IsValid("AbTp9 fok") // false
+
 IsValid("AbTp9!fok") // true
