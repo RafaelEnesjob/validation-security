@@ -11,5 +11,4 @@ public class ValidationSecurityApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(ValidationSecurityApplication.class, args);
 	}
-
 }
