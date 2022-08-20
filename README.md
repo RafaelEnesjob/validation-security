@@ -12,13 +12,4 @@ Será considerada uma senha válida aquela que seguir as regras abaixo.
 
  Exemplo
 
-> IsValid("") // false  
-IsValid("aa") // false  
-IsValid("ab") // false  
-IsValid("AAAbbbCc") // false  
-IsValid("AbTp9!foo") // false  
-IsValid("AbTp9!foA") // false
-
-IsValid("AbTp9 fok") // false
-
-IsValid("AbTp9!fok") // true
+![example](https://user-images.githubusercontent.com/80723896/185744384-1a102957-e7db-4ec1-9384-1472f8057985.png)
