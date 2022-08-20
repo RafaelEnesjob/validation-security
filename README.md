@@ -1,7 +1,7 @@
 # Uma API para realizar a validação do nível de segurança da senha fornecida pelo usuário. 
 Será considerada uma senha válida aquela que seguir as regras abaixo.
 
- Regras
+###### Regras
  - Nove ou mais caracteres
  - Ao menos 1 dígito
  - Ao menos 1 letra minúscula
@@ -12,11 +12,11 @@ Será considerada uma senha válida aquela que seguir as regras abaixo.
 
  Exemplo
 
-`IsValid("") // false  
+> IsValid("") // false  
 IsValid("aa") // false  
 IsValid("ab") // false  
 IsValid("AAAbbbCc") // false  
 IsValid("AbTp9!foo") // false  
 IsValid("AbTp9!foA") // false
 IsValid("AbTp9 fok") // false
-IsValid("AbTp9!fok") // true`
+IsValid("AbTp9!fok") // true
