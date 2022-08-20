@@ -27,4 +27,7 @@ public class Validation{
 
     private Boolean valid;
 
+    public Validation(String password) {
+        this.password = password;
+    }
 }
