@@ -12,11 +12,11 @@ Será considerada uma senha válida aquela que seguir as regras abaixo.
 
  Exemplo
 
-IsValid("") // false  
+`IsValid("") // false  
 IsValid("aa") // false  
 IsValid("ab") // false  
 IsValid("AAAbbbCc") // false  
 IsValid("AbTp9!foo") // false  
 IsValid("AbTp9!foA") // false
 IsValid("AbTp9 fok") // false
-IsValid("AbTp9!fok") // true
+IsValid("AbTp9!fok") // true`
