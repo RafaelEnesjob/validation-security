@@ -10,6 +10,6 @@ Será considerada uma senha válida aquela que seguir as regras abaixo.
  - Considere como especial os seguintes caracteres: !@#$%^&*()-+
  - Não possuir caracteres repetidos dentro do conjunto
 
- Exemplo
+ **Exemplo:**
 
 ![example](https://user-images.githubusercontent.com/80723896/185744384-1a102957-e7db-4ec1-9384-1472f8057985.png)
