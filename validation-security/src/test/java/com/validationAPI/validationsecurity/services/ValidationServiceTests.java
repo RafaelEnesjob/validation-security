@@ -29,7 +29,7 @@ public class ValidationServiceTests {
 
 
     @Test
-    void shouldReturnIsValidTrueWhenHasCorrectPassword() {
+    public void shouldReturnIsValidTrueWhenHasCorrectPassword() {
         Validation validation = new Validation();
         validation.setValid(true);
 
@@ -40,9 +40,49 @@ public class ValidationServiceTests {
     }
 
     @Test
-    void shouldReturnBadRequestWhenHasIncorrectPassword() {
+    public void shouldReturnIncorrectRequestWhenPasswordHasNoLowerCaseCharacters() {
 
-        Exception exception = Assertions.assertThrows(ResponseStatusException.class,() -> service.enterThePassword(new Validation("aa")));
+        Exception exception = Assertions.assertThrows(ResponseStatusException.class, () -> service.enterThePassword(new Validation("ABTP9!FOK")));
+
+        String message = ((ResponseStatusException) exception).getReason();
+
+        Assertions.assertTrue("A senha deve conter ao menos uma letra minúscula.".contains(message));
+    }
+
+    @Test
+    public void shouldReturnIncorrectRequestWhenPasswordHasNoUpperCaseCharacters() {
+
+        Exception exception = Assertions.assertThrows(ResponseStatusException.class, () -> service.enterThePassword(new Validation("abtp9!fok")));
+
+        String message = ((ResponseStatusException) exception).getReason();
+
+        Assertions.assertTrue("A senha deve conter ao menos uma letra maiúscula.".contains(message));
+    }
+
+    @Test
+    public void shouldReturnIncorrectPromptWhenPasswordHasNoSpecialCharacters() {
+
+        Exception exception = Assertions.assertThrows(ResponseStatusException.class, () -> service.enterThePassword(new Validation("aBtp9RfoK")));
+
+        String message = ((ResponseStatusException) exception).getReason();
+
+        Assertions.assertTrue("A senha deve conter ao menos um caracter especial.".contains(message));
+    }
+
+    @Test
+    public void shouldReturnIncorrectPromptWhenPasswordIsLessThanNineCharacters() {
+
+        Exception exception = Assertions.assertThrows(ResponseStatusException.class, () -> service.enterThePassword(new Validation("ab")));
+
+        String message = ((ResponseStatusException) exception).getReason();
+
+        Assertions.assertTrue("A senha deve conter no mínimo 9 caracteres.".contains(message));
+    }
+
+    @Test
+    public void shouldReturnIncorrectRequestWhenPasswordHasRepeatedCharacter() {
+
+        Exception exception = Assertions.assertThrows(ResponseStatusException.class, () -> service.enterThePassword(new Validation("AAAbbbCc")));
 
         String message = ((ResponseStatusException) exception).getReason();
 

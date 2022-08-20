@@ -1,7 +1,6 @@
-package com.validationAPI.validationsecurity.services;
+package com.validationAPI.validationsecurity.controller;
 
 import com.google.common.io.Files;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.web.server.LocalServerPort;
@@ -15,7 +14,7 @@ import static org.apache.http.HttpStatus.SC_OK;
 import static org.hamcrest.Matchers.is;
 
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
-public class IntegrationTest  {
+public class ValidationControllerTest {
 
     private static final String RESOURCE_DIRECTORY = "src/test/resources";
 
@@ -23,7 +22,7 @@ public class IntegrationTest  {
     public int port;
 
     @Test
-    void shouldReturnIsValidTrueWhenHasCorrectPassword() throws IOException {
+    public void shouldReturnIsValidTrueWhenHasCorrectPassword() throws IOException {
 
         given()
                 .log().everything()
@@ -47,5 +46,4 @@ public class IntegrationTest  {
         }
         return Files.toString(file, Charset.defaultCharset());
     }
-
 }
