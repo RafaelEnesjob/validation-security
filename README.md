@@ -37,6 +37,7 @@ http://localhost:8080/swagger-ui.html
 - Java 11
 - Spring Boot 2.7.2
 - Banco de Dados H2
+- Regex para validar o formato da senha
 - Testes unitários com Junit utilizando Mockito
 - Teste integrado utilizando RestAssured
 - Criptografia da senha com MD5
