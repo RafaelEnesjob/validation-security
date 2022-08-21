@@ -65,6 +65,9 @@ localhost:8080/validation (POST)
 | password |  String |
 
 CURL de exemplo:
+
+
+```json
 `curl -X 'POST' \
   'http://localhost:8080/validation' \
   -H 'accept: */*' \
@@ -72,6 +75,7 @@ CURL de exemplo:
   -d '{
   "password": "AbTp9!fok"
 }'`
+```
 
 Imagem de exemplo do Swagger quando a senha for válida:
 Senha informada: "AbTp9!fok"
