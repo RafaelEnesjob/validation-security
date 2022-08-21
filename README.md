@@ -31,10 +31,13 @@ http://localhost:8080/swagger-ui.html
 
 - Ou se preferir pode testar através do PostMan
 localhost:8080/validation (POST)
+{      
+        "password": "informe a senha aqui"
+    }
 
 - Acesse o H2
-JDBC URL: jdbc:h2:mem:valid_secdb
 - [H2](http://localhost:8080/h2-console/login.jsp?jsessionid=55c3678c0293261b804c5fbbaa97f7b6).
+- JDBC URL: jdbc:h2:mem:valid_secdb
 
 
 ## Detalhes Técnicos
@@ -73,5 +76,11 @@ Imagem de como ficará salvo no Banco de Dadps H2:
 Imagem de exemplo quando a senha não tiver caracter minúsculo:
 Senha informada: ABTP9!FOK
 ![miniuscula](https://user-images.githubusercontent.com/80723896/185801057-7ceb54de-1520-4645-ac8a-6170c632e9b7.png)
+
+Imagem de exemplo quando a senha não tiver caracter maiúsculo:
+Senha informada: abtp9!fok
+![maiuscula](https://user-images.githubusercontent.com/80723896/185801399-6e2250ab-3e69-44c3-9d08-af7f00c79652.png)
+
+
 
 
