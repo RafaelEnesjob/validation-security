@@ -74,7 +74,7 @@ CURL de exemplo:
 }'`
 
 Imagem de exemplo do Swagger quando a senha for válida:
-- Senha informada: "AbTp9!fok"
+Senha informada: "AbTp9!fok"
 ![senhaok](https://user-images.githubusercontent.com/80723896/185800913-cf508df0-098c-4d9c-b681-fe3f0dccafbd.png)
 
 Imagem de como ficará salvo no Banco de Dadps H2:
@@ -92,6 +92,13 @@ Imagem de exemplo quando a senha não tiver caracter especial:
 Senha informada: aBtp9RfoK
 ![caracterespecial](https://user-images.githubusercontent.com/80723896/185802568-1fe23e6a-d27a-45c9-980f-e944f6760aff.png)
 
+Imagem de exemplo quando a senha não tiver a quantidade de caracter suficiente:
+Senha informada: aB
+![maxcaracter](https://user-images.githubusercontent.com/80723896/185802822-6f1e1fa5-602b-43e3-befb-d352dc3445a9.png)
+
+Imagem de exemplo quando a senha tiver caracter repetido:
+Senha informada: AbTp9!foA
+![repetido](https://user-images.githubusercontent.com/80723896/185803165-f202a7f4-919c-4665-8b1f-4e9dfb816ee0.png)
 
 
 
