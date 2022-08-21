@@ -1,5 +1,5 @@
-# Uma API para realizar a validação do nível de segurança da senha fornecida pelo usuário. 
-Será considerada uma senha válida aquela que seguir as regras abaixo.
+# Uma API para realizar a validação do nível de segurança da senha fornecida pelo usuário. :lock:
+Será considerada uma senha válida aquela que seguir as regras abaixo. 
 
 ###### Regras
  - Nove ou mais caracteres
@@ -15,7 +15,7 @@ Será considerada uma senha válida aquela que seguir as regras abaixo.
 ![example](https://user-images.githubusercontent.com/80723896/185744384-1a102957-e7db-4ec1-9384-1472f8057985.png)
 
 
-## Instruções básicas para execução do projeto
+## :hammer: Instruções básicas para execução do projeto
 Antes de começar será necessário que a máquina possua a versão 11 do Java e uma IDE de sua preferência. Eu utilizei o IntelliJ IDEA.
 [Tutorial para Instalação do Java 11](https://www.youtube.com/watch?v=bE5GbXgfi8c&t=758s).
 
@@ -47,7 +47,7 @@ localhost:8080/validation (POST)
 - JDBC URL: jdbc:h2:mem:valid_secdb
 
 
-## Detalhes Técnicos
+## :gear: Detalhes Técnicos
 - Java 11
 - Spring Boot 2.7.2
 - Banco de Dados H2
@@ -77,7 +77,7 @@ CURL de exemplo:
 }'`
 ```
 
-Imagem de exemplo do Swagger quando a senha for válida:
+Imagem de exemplo do Swagger quando a senha for válida: :white_check_mark:
 Senha informada: "AbTp9!fok"
 ![senhaok](https://user-images.githubusercontent.com/80723896/185800913-cf508df0-098c-4d9c-b681-fe3f0dccafbd.png)
 
