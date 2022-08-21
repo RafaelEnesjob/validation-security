@@ -64,7 +64,7 @@ public class ValidationService {
     private static String encryption(String password) {
         StringBuilder stringBuilder = new StringBuilder();
         try {
-            MessageDigest messageDigest = MessageDigest.getInstance("SHA-256");
+            MessageDigest messageDigest = MessageDigest.getInstance("MD5");
             messageDigest.update(password.getBytes(StandardCharsets.UTF_8));
             byte[] digest = messageDigest.digest();
             for (byte b : digest) {
