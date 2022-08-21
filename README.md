@@ -112,6 +112,8 @@ Senha informada: "AbTp9!foA"
 
 - Aqui nesse tópico vou explicar a divisão dos pacotes. Fiz um pacote api.rest onde dentro dele tenho o controller que É a camada responsável por ligar o model e a view, fazendo com que os models possam ser repassados para as views e vice-versa. Dentro de api.rest fiz um Mapper que é onde acontece a conversão dos objetos, primeiros fiz um método toEntity que é onde faço a conversão do meu objeto DTO de request para Validation que é a entity que será persistida no banco, OBS(Não é uma boa prática trabalhar com a classe de entidade em requisição e respostas), por isso usamos o mapper e objetos DTO "Data Transfer Object". Também fiz um método toModel onde converto o objeto Validation que é minha entity para um objeto de response. Dentro do package "models" criei ali os objetos de request e response. Por último vou explicar sobre o domain que seria nossa camada de negócio onde temos o service (regra de negócio), entities (onde declaro o nome da tabela e das colunas no banco de dados) e o repository que é onde faz a persistência no banco de dados
 
+- O porque deixei o nome da tabela pass_sec? pass de password e sec de security, não quis deixar o nome como password pois qualquer hacker poderia tentar invadir tabelas com esse nome. E o nome do banco deixei valid_sec, valid de validar e sec de security ou seja validar segurança.
+
 
 - Sobre as senhas inválidas, achei mais amigável retornar uma exceção quando for informado uma senha errada, retorno um bad request 400 com uma menssagem dizendo o motivo pelo qual a senha não está válida, ficando então mais fácil para o usuário entender onde ele errou e informar então uma senha válida.
 
