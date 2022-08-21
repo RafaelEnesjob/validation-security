@@ -68,6 +68,6 @@ Imagem de como ficará salvo no Banco de Dadps H2:
 
 Imagem de exemplo quando a senha não tiver caracter minúsculo:
 Senha informada: ABTP9!FOK
-[Exemplo]![miniuscula](https://user-images.githubusercontent.com/80723896/185800760-59a0bf67-0498-4afd-b815-f3b9e6ab7262.png)
+![miniuscula](https://user-images.githubusercontent.com/80723896/185801057-7ceb54de-1520-4645-ac8a-6170c632e9b7.png)
 
 
