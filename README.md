@@ -59,4 +59,6 @@ CURL de exemplo:
 }'`
 
 Imagem de exemplo do Swagger quando a senha for válida:
+![Retorna 200 OK quando passar uma senha valida](![valid](https://user-images.githubusercontent.com/80723896/185799421-db6a7938-82bc-4d11-aa0f-20cac9c3a69d.png)
+
 
