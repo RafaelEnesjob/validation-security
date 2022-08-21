@@ -26,13 +26,14 @@ git clone https://github.com/RafaelEnesjob/validation-security.git
 
 - Inicie a aplicação com sua IDE de sua preferência
 
-- Acesse o seguinte endereço no navegador
+- Acesse o seguinte endereço no navegador para testar
 http://localhost:8080/swagger-ui.html
 
 - Ou se preferir pode testar através do PostMan
 localhost:8080/validation (POST)
 
 - Acesse o H2
+JDBC URL: jdbc:h2:mem:valid_secdb
 - [H2](http://localhost:8080/h2-console/login.jsp?jsessionid=55c3678c0293261b804c5fbbaa97f7b6).
 
 
