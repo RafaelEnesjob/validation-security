@@ -61,7 +61,7 @@ CURL de exemplo:
 
 Imagem de exemplo do Swagger quando a senha for válida:
 Senha informada: "AbTp9!fok"
-![Retorna 200 OK quando passar uma senha valida](![valid](https://user-images.githubusercontent.com/80723896/185799421-db6a7938-82bc-4d11-aa0f-20cac9c3a69d.png)
+![senhaok](https://user-images.githubusercontent.com/80723896/185800913-cf508df0-098c-4d9c-b681-fe3f0dccafbd.png)
 
 Imagem de como ficará salvo no Banco de Dadps H2:
 [Exemplo]![senha h2](https://user-images.githubusercontent.com/80723896/185799716-c2c7342b-426d-487f-a581-1f82a6184a13.png)
