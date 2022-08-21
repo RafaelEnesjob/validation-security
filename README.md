@@ -81,15 +81,15 @@ Imagem de como ficará salvo no Banco de Dadps H2:
 [Exemplo]![senha h2](https://user-images.githubusercontent.com/80723896/185799716-c2c7342b-426d-487f-a581-1f82a6184a13.png)
 
 Imagem de exemplo quando a senha não tiver caracter minúsculo:
-- Senha informada: ABTP9!FOK
+Senha informada: ABTP9!FOK
 ![miniuscula](https://user-images.githubusercontent.com/80723896/185801057-7ceb54de-1520-4645-ac8a-6170c632e9b7.png)
 
 Imagem de exemplo quando a senha não tiver caracter maiúsculo:
-- Senha informada: abtp9!fok
+Senha informada: abtp9!fok
 ![maiuscula](https://user-images.githubusercontent.com/80723896/185801399-6e2250ab-3e69-44c3-9d08-af7f00c79652.png)
 
 Imagem de exemplo quando a senha não tiver caracter especial:
-- Senha informada: aBtp9RfoK
+Senha informada: aBtp9RfoK
 ![caracterespecial](https://user-images.githubusercontent.com/80723896/185802568-1fe23e6a-d27a-45c9-980f-e944f6760aff.png)
 
 
