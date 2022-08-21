@@ -109,10 +109,10 @@ Senha informada: AbTp9!foA
 
 - Pensei em fazer realmente uma API Rest utilizando a linguagem Java na versão 11 com Spring. Para isso fiz um controller com um único endpoint de Post passando a senha no body da requisição do tipo String, fiz um service onde utilizei 3 métodos, primeiro é o metodo para validar caracter repetidos, o segundo é o método para validar as expressões regulares e terceiro fiz um método para criptografar a senha para salvar no banco, pois ninguém pode conhecer as senhas dos usuários quando ficam salvas em um Banco de dados, então fiz um método que converte a senha para MD5 e por útlimo, tem o repository que persiste a entidade no banco de dados caso a senha seja true. 
 
-- Sobre as senhas inválidas achei mais amigável retornar uma exceção quando for informado uma senha errada, retorno um bad request 400 com uma menssagem dizendo o motivo pelo qual a senha não está válida ficando então mais fácil para o usuário entender onde ele errou e informar então uma senha válida.
+- Sobre as senhas inválidas, achei mais amigável retornar uma exceção quando for informado uma senha errada, retorno um bad request 400 com uma menssagem dizendo o motivo pelo qual a senha não está válida, ficando então mais fácil para o usuário entender onde ele errou e informar então uma senha válida.
 
-- Referente aos testes, utilizei Mockito para realizar os testes unitários na classe ValidationServiceTests e testar o retorno da mensagem quando passa uma senha inválida e também quando passa uma senha válida e para o teste de integração utilizei RestAssured testando todo o fluxo do endpoint na classe ValidationControllerTests
-Acredito que o testes eu possa melhorar mais, montar mais cenários e adicionar alguma lib para analisar a cobertura dos testes
+- Referente aos testes, utilizei Mockito para realizar os testes unitários na classe ValidationServiceTests e testar o retorno da mensagem, quando passa uma senha inválida e também quando passa uma senha válida. Para o teste de integração utilizei RestAssured testando todo o fluxo do endpoint na classe ValidationControllerTests
+Acredito que os testes eu possa melhorar mais, montar mais cenários e adicionar alguma lib para analisar a cobertura dos testes
 
 - Esse foi o meu raciocínio para resolução do case, mas estou aberto a criticas e sugestões para melhorar a API, acredito que com tempo posso melhorar o service onde faço a validação das expressões regulares e também melhorar a parte de testes. 
 
