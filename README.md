@@ -32,6 +32,15 @@ http://localhost:8080/swagger-ui.html
 - Ou se preferir pode testar através do PostMan
 localhost:8080/validation (POST)
 
+``` json
+
+{      
+        "password": "abtp9!fok"
+    }
+
+```
+
+
 
 - Acesse o H2
 - [H2](http://localhost:8080/h2-console/login.jsp?jsessionid=55c3678c0293261b804c5fbbaa97f7b6).
