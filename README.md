@@ -64,10 +64,10 @@ Senha informada: "AbTp9!fok"
 ![Retorna 200 OK quando passar uma senha valida](![valid](https://user-images.githubusercontent.com/80723896/185799421-db6a7938-82bc-4d11-aa0f-20cac9c3a69d.png)
 
 Imagem de como ficará salvo no Banco de Dadps H2:
-![Exemplo]![senha h2](https://user-images.githubusercontent.com/80723896/185799716-c2c7342b-426d-487f-a581-1f82a6184a13.png)
+[Exemplo]![senha h2](https://user-images.githubusercontent.com/80723896/185799716-c2c7342b-426d-487f-a581-1f82a6184a13.png)
 
 Imagem de exemplo quando a senha não tiver caracter minúsculo:
 Senha informada: ABTP9!FOK
-![Exemplo]![miniuscula](https://user-images.githubusercontent.com/80723896/185800760-59a0bf67-0498-4afd-b815-f3b9e6ab7262.png)
+[Exemplo]![miniuscula](https://user-images.githubusercontent.com/80723896/185800760-59a0bf67-0498-4afd-b815-f3b9e6ab7262.png)
 
 
