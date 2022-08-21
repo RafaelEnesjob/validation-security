@@ -29,6 +29,10 @@ git clone https://github.com/RafaelEnesjob/validation-security.git
 - Acesse o seguinte endereço no navegador
 http://localhost:8080/swagger-ui.html
 
+- Acesse o H2
+- [H2](http://localhost:8080/h2-console/login.jsp?jsessionid=55c3678c0293261b804c5fbbaa97f7b6).
+
+
 ## Detalhes Técnicos
 - Java 11
 - Spring Boot 2.7.2
@@ -39,5 +43,20 @@ http://localhost:8080/swagger-ui.html
 
 ## Documentação da API
 
+- Inserindo uma senha para verificar se é válida
 
+| Parâmetro  |  Tipo  | 
+| ------------------- | ------------------- |
+| password |  String |
+
+CURL de exemplo:
+`curl -X 'POST' \
+  'http://localhost:8080/validation' \
+  -H 'accept: */*' \
+  -H 'Content-Type: application/json' \
+  -d '{
+  "password": "AbTp9!fok"
+}'`
+
+Imagem de exemplo do Swagger quando a senha for válida:
 
