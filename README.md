@@ -54,6 +54,7 @@ localhost:8080/validation (POST)
 - Regex para validar o formato da senha
 - Testes unitários com Junit utilizando Mockito
 - Teste integrado utilizando RestAssured
+- Lombok
 - Criptografia da senha com MD5
 
 ## Documentação da API
