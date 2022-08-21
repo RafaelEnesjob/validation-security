@@ -31,7 +31,8 @@ http://localhost:8080/swagger-ui.html
 
 - Ou se preferir pode testar através do PostMan
 localhost:8080/validation (POST)
-{      
+JSON
+- {      
         "password": "informe a senha aqui"
     }
 
