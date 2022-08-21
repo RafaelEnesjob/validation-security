@@ -13,3 +13,31 @@ Será considerada uma senha válida aquela que seguir as regras abaixo.
  **Exemplo:**
 
 ![example](https://user-images.githubusercontent.com/80723896/185744384-1a102957-e7db-4ec1-9384-1472f8057985.png)
+
+
+## Instruções básicas para execução do projeto
+Antes de começar será necessário que a máquina possua a versão 11 do Java e uma IDE de sua preferência. Eu utilizei o IntelliJ IDEA.
+[Tutorial para Instalação do Java 11](https://www.youtube.com/watch?v=bE5GbXgfi8c&t=758s).
+
+###### Iniciando o projeto pela primeira vez
+
+- Clone este repositório
+git clone https://github.com/RafaelEnesjob/validation-security.git
+
+- Inicie a aplicação com sua IDE de sua preferência
+
+- Acesse o seguinte endereço no navegador
+http://localhost:8080/swagger-ui.html
+
+## Detalhes Técnicos
+- Java 11
+- Spring Boot 2.7.2
+- Banco de Dados H2
+- Testes unitários com Junit utilizando Mockito
+- Teste integrado utilizando RestAssured
+- Criptografia da senha com MD5
+
+## Documentação da API
+
+
+
