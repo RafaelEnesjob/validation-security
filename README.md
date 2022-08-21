@@ -85,23 +85,23 @@ Senha informada: "AbTp9!fok"
 [Exemplo]![senha h2](https://user-images.githubusercontent.com/80723896/185799716-c2c7342b-426d-487f-a581-1f82a6184a13.png)
 
 :x: Imagem de exemplo quando a senha não tiver caracter minúsculo:
-Senha informada: ABTP9!FOK
+Senha informada: "ABTP9!FOK"
 ![miniuscula](https://user-images.githubusercontent.com/80723896/185801057-7ceb54de-1520-4645-ac8a-6170c632e9b7.png)
 
 :x: Imagem de exemplo quando a senha não tiver caracter maiúsculo:
-Senha informada: abtp9!fok
+Senha informada: "abtp9!fok"
 ![maiuscula](https://user-images.githubusercontent.com/80723896/185801399-6e2250ab-3e69-44c3-9d08-af7f00c79652.png)
 
 :x: Imagem de exemplo quando a senha não tiver caracter especial:
-Senha informada: aBtp9RfoK
+Senha informada: "aBtp9RfoK"
 ![caracterespecial](https://user-images.githubusercontent.com/80723896/185802568-1fe23e6a-d27a-45c9-980f-e944f6760aff.png)
 
 :x: Imagem de exemplo quando a senha não tiver a quantidade de caracter suficiente:
-Senha informada: aB
+Senha informada: "aB"
 ![maxcaracter](https://user-images.githubusercontent.com/80723896/185802822-6f1e1fa5-602b-43e3-befb-d352dc3445a9.png)
 
 :x: Imagem de exemplo quando a senha tiver caracter repetido:
-Senha informada: AbTp9!foA
+Senha informada: "AbTp9!foA"
 ![repetido](https://user-images.githubusercontent.com/80723896/185803165-f202a7f4-919c-4665-8b1f-4e9dfb816ee0.png)
 
 ## Detalhes sobre a sua solução:
@@ -116,7 +116,7 @@ Acredito que os testes eu possa melhorar mais, montar mais cenários e adicionar
 
 - Esse foi o meu raciocínio para resolução do case, mas estou aberto a criticas e sugestões para melhorar a API, acredito que com tempo posso melhorar o service onde faço a validação das expressões regulares e também melhorar a parte de testes. 
 
-- :cloud: Quero me aperfeiçoar em AWS e tirar certificações pois ainda não tenho um conhecimento tão avançado em AWS. Aqui está um curso a qual vou iniciar referente ao assunto https://www.udemy.com/course/preparatorio-exame-aws-certified-cloud-practitioner-clf-c01/
+- :cloud: Quero me aperfeiçoar em AWS e tirar certificações, pois ainda não tenho um conhecimento tão avançado em AWS. Aqui está um curso a qual vou iniciar referente ao assunto https://www.udemy.com/course/preparatorio-exame-aws-certified-cloud-practitioner-clf-c01/
 
 - Agradeço desde já a oportunidade!
 
