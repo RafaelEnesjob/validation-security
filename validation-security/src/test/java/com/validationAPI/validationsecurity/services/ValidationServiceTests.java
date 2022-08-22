@@ -3,9 +3,7 @@ package com.validationAPI.validationsecurity.services;
 import com.validationAPI.validationsecurity.domain.entities.Validation;
 import com.validationAPI.validationsecurity.domain.repositories.ValidationRepository;
 import com.validationAPI.validationsecurity.domain.services.ValidationService;
-import org.hibernate.mapping.Any;
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
@@ -24,8 +22,6 @@ public class ValidationServiceTests {
 
     @Mock
     private ValidationRepository repository;
-
-    private String password;
 
 
     @Test
@@ -88,6 +84,5 @@ public class ValidationServiceTests {
 
         Assertions.assertTrue("A senha não deve conter caracteres repetidos.".contains(message));
     }
-
 
 }
